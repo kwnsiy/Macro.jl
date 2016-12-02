@@ -28,6 +28,12 @@ macro head(filename)
   end
 end
 
+""" @dir """
+macro dir(pass...)
+  return readdir(pass...)
+end
+
+
 """ @replace! """
 macro replace!(string, pat, r)
   quote
